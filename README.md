@@ -1,35 +1,50 @@
-# Pneumonia Detection in Pediatric - CNN Model
+# Pneumonia Detection Using CNN - Chest X-ray Analysis
 
-Chest X-ray based detection model for pneumonia in pediatric patients using Convolutional Neural Network (CNN).
+AI in Healthcare Research Project - Pediatric Pneumonia Detection
 
 ## Overview
-This project implements a deep learning model to detect pneumonia from pediatric chest X-ray images, supporting early diagnosis in clinical settings.
+Deep learning model for automated detection of pneumonia in pediatric chest X-ray images using Convolutional Neural Networks (CNN). Aims to assist radiologists in early diagnosis, especially in resource-limited settings.
+
+## Problem Statement
+Pneumonia is a leading cause of child mortality in Nigeria. Manual X-ray interpretation is time-consuming and requires expert radiologists. This project automates detection with AI.
 
 ## Tech Stack
-- Python 3.8+
-- TensorFlow / Keras
-- OpenCV
-- NumPy, Matplotlib
-- CNN Architecture: ResNet / VGG16 Transfer Learning
-
-## Dataset
-- Pediatric Chest X-ray Dataset (Kaggle - Chest X-ray Images)
-- Classes: Normal vs Pneumonia
+- Language: Python
+- Deep Learning: TensorFlow, Keras
+- Model: Convolutional Neural Network (CNN) - ResNet50 / Custom CNN
+- Dataset: Chest X-ray Images (Pediatric) - Kermany et al.
+- Libraries: NumPy, Pandas, Matplotlib, Scikit-learn, OpenCV
 
 ## Methodology
-1. Data Preprocessing & Augmentation
-2. CNN Model Building (Transfer Learning)
-3. Training & Validation
-4. Evaluation: Accuracy, Precision, Recall, F1-Score
-5. Deployment Ready Model
+1. Data Preprocessing: Resizing (224x224), Normalization, Augmentation
+2. Model Architecture: CNN with Transfer Learning (ResNet50)
+3. Training: 80% train, 20% test, EarlyStopping, Adam optimizer
+4. Evaluation: Accuracy, Precision, Recall, F1-Score, Confusion Matrix, Grad-CAM visualization
 
-## Results
-- Accuracy: 92%+
-- Model saved as pneumonia_cnn_model.h5
+## Results (Expected)
+- Target Accuracy: >90%
+- Model able to distinguish Normal vs Pneumonia with high sensitivity
 
-## How to Run
-```python
-pip install -r requirements.txt
-python train.py
+## Features
+- Automated chest X-ray classification
+- Explainable AI with Grad-CAM heatmaps
+- Web deployment ready (Flask API)
+
+## Research Contribution
+Contributes to AI in Healthcare research, demonstrating applicability of CNN in medical image analysis for low-resource environments like Nigeria.
+
+## Future Work
+- Extend to multi-class (Bacterial vs Viral pneumonia)
+- Deploy as mobile health application
+
+## Author
+*Olabisi Onalaja*
+Computer Science Lecturer / PhD Researcher
+AI in Healthcare & Agricultural Tech | Python, ML, CNN
+olabisionalaja07@gmail.com
+GitHub: @onalaja2026
+
+## Reference
+Kermany et al., Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification.
 
 
